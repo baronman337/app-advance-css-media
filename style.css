@@ -1,0 +1,61 @@
+img {
+  background-color: blue;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin: 0 50px;
+}
+
+.photo {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 298px;
+  height: 298px;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-name {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+p {
+  padding-top: 20px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-right: 250px;
+}
+
+/* Afisarea continutului pe telefoane, tablete si calculatoare */
+@media only screen and (max-width: 768px) {
+  .content {
+    margin: 0 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+  }
+
+  p {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+}
